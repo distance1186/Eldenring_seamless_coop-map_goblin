@@ -1,0 +1,25 @@
+[2025-12-18 15:56:00.124] [modengine] [info] Attempting to load global config at Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\modengine2\config.toml
+[2025-12-18 15:56:00.125] [modengine] [info] Attempting to load mod settings config at Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\config_eldenring.toml
+[2025-12-18 15:56:00.125] [modengine] [error] Failed to load config (from `Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\config_eldenring.toml`): Error while parsing string: escape sequence '\e' is not supported in TOML 1.0.0 and earlier
+[2025-12-18 15:56:00.125] [modengine] [info] ModEngine version 2.1.0-0924ab36f1311bf84e7e626740b4bf2c0d54909a initializing for Elden Ring
+[2025-12-18 15:56:00.125] [modengine] [info] Local settings loaded: false, Global settings loaded: false
+[2025-12-18 15:56:00.125] [modengine] [info] Main thread ID: 60484
+[2025-12-18 15:56:00.126] [modengine] [info] Enabling extension base
+[2025-12-18 15:56:00.126] [modengine] [info] Enabled extension base
+[2025-12-18 15:56:00.126] [modengine] [info] Applied 1 hooks
+[2025-12-18 15:56:00.127] [modengine] [info] Starting worker thread
+[2025-12-18 15:58:28.616] [modengine] [info] Attempting to load global config at Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\modengine2\config.toml
+[2025-12-18 15:58:28.616] [modengine] [info] Attempting to load mod settings config at Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\config_eldenring.toml
+[2025-12-18 15:58:28.616] [modengine] [info] Local config loaded
+[2025-12-18 15:58:28.616] [modengine] [info] ModEngine version 2.1.0-0924ab36f1311bf84e7e626740b4bf2c0d54909a initializing for Elden Ring
+[2025-12-18 15:58:28.616] [modengine] [info] Local settings loaded: true, Global settings loaded: false
+[2025-12-18 15:58:28.616] [modengine] [info] Main thread ID: 56464
+[2025-12-18 15:58:28.619] [modengine] [info] Loaded external DLL Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\SeamlessCoop\ersc.dll
+[2025-12-18 15:58:33.441] [modengine] [info] Enabling extension base
+[2025-12-18 15:58:33.441] [modengine] [info] Enabled extension base
+[2025-12-18 15:58:33.441] [modengine] [info] Enabling extension mod_loader
+[2025-12-18 15:58:33.463] [modengine] [info] Installing mod location mod
+[2025-12-18 15:58:33.471] [modengine] [info] Resolved mod path to Y:\SteamLibrary\steamapps\common\ELDEN RING\Game\mod
+[2025-12-18 15:58:33.471] [modengine] [info] Enabled extension mod_loader
+[2025-12-18 15:58:33.497] [modengine] [info] Applied 3 hooks
+[2025-12-18 15:58:33.500] [modengine] [info] Starting worker thread

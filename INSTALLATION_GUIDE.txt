@@ -1,0 +1,189 @@
+===============================================================================
+ELDEN RING MOD PACKAGE - INSTALLATION GUIDE
+===============================================================================
+
+This package contains:
+- Seamless Co-op mod (for multiplayer without restrictions)
+- Map for Goblins v1.16 (detailed map markers and information)
+- Mod Engine 2 (required to run the mods)
+
+===============================================================================
+INSTALLATION INSTRUCTIONS
+===============================================================================
+
+STEP 1: Locate Your Elden Ring Game Folder
+-------------------------------------------
+Find your Elden Ring installation directory. Common locations:
+
+  Steam (default):
+    C:\Program Files (x86)\Steam\steamapps\common\ELDEN RING\Game
+
+  Steam (custom drive):
+    [Drive]:\SteamLibrary\steamapps\common\ELDEN RING\Game
+
+  Epic Games:
+    C:\Program Files\Epic Games\ELDEN RING\Game
+
+You need to find the folder that contains "eldenring.exe"
+
+
+STEP 2: Copy All Files
+-----------------------
+1. Copy ALL contents of this package folder
+2. Paste them into your Elden Ring Game folder
+3. When prompted, choose to merge/overwrite folders
+
+You should end up with these in your Game folder:
+  - SeamlessCoop\ folder
+  - mod\ folder
+  - modengine2\ folder
+  - config_eldenring.toml file
+  - launchmod_eldenring.bat file
+  - modengine2_launcher.exe file
+  - ersc_launcher.exe file
+  - (plus all the original game files)
+
+
+STEP 3: Launch the Game
+------------------------
+IMPORTANT: Do NOT launch from Steam!
+
+To play with mods:
+  1. Navigate to your Game folder in File Explorer
+  2. Double-click "launchmod_eldenring.bat"
+  3. The game will launch with both mods loaded
+
+===============================================================================
+USING THE MODS
+===============================================================================
+
+SEAMLESS CO-OP
+--------------
+- Loads automatically when you use launchmod_eldenring.bat
+- In-game, access the co-op menu to create or join sessions
+- To play with friends:
+  1. One person creates a session (you'll get a session ID)
+  2. Share the session ID with friends
+  3. Friends join using that ID
+
+- Password: Configured in SeamlessCoop\cooppassword.ini
+  (both players must have the same password to connect)
+
+
+MAP FOR GOBLINS
+---------------
+The map mod is DISABLED by default. To enable it:
+
+  1. Start the game (via launchmod_eldenring.bat)
+  2. Rest at ANY Site of Grace
+  3. Look for a NEW menu option (likely "Map Configuration")
+  4. Select which markers you want to see:
+     - Sites of Grace
+     - Bosses and their drops
+     - Unique items
+     - NPCs and enemies
+     - Chests and loot
+     - And many more...
+  5. Open your world map (press G or M)
+  6. You'll now see detailed markers!
+
+NOTE: Contains spoilers! Icons disappear as you complete content.
+
+===============================================================================
+MULTIPLAYER SETUP (Playing with Friends)
+===============================================================================
+
+FOR CO-OP BETWEEN MULTIPLE MACHINES:
+------------------------------------
+1. Install this package on BOTH machines (same steps above)
+2. Make sure both use the SAME password:
+   - Open: SeamlessCoop\cooppassword.ini
+   - Set the same password on both machines
+3. Both players launch via launchmod_eldenring.bat
+4. One player creates session, shares the session ID
+5. Other player joins using that ID
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+PROBLEM: Game doesn't launch at all
+SOLUTION: 
+  - Make sure you're using launchmod_eldenring.bat, NOT Steam
+  - Check that all files copied correctly
+  - Try running launchmod_eldenring.bat as Administrator
+
+PROBLEM: Game launches but no Seamless Co-op menu
+SOLUTION:
+  - Verify you launched via launchmod_eldenring.bat
+  - Check modengine2\logs folder for error messages
+
+PROBLEM: Map looks the same (no new markers)
+SOLUTION:
+  - The mod is OFF by default
+  - Rest at a Site of Grace
+  - Look for Map Configuration menu option
+  - Enable the marker categories you want
+
+PROBLEM: Can't connect to friend in co-op
+SOLUTION:
+  - Both must have IDENTICAL mod setup
+  - Both must use SAME password (cooppassword.ini)
+  - Both must launch via launchmod_eldenring.bat
+  - Make sure session ID is typed correctly
+
+PROBLEM: Steam won't let me play / EasyAntiCheat error
+SOLUTION:
+  - This is normal - don't launch from Steam
+  - Always use launchmod_eldenring.bat instead
+  - Playing with mods means no Steam achievements/online
+
+===============================================================================
+IMPORTANT NOTES
+===============================================================================
+
+DO:
+  ✓ Always launch using launchmod_eldenring.bat
+  ✓ Enable map markers at Sites of Grace
+  ✓ Use same password for co-op between machines
+  ✓ Keep backups of your save files
+
+DON'T:
+  ✗ Launch from Steam's "Play" button (mods won't work)
+  ✗ Use ersc_launcher.exe alone (Map for Goblins won't load)
+  ✗ Mix with other mods (may cause conflicts)
+  ✗ Go online with vanilla Elden Ring servers (use Seamless Co-op only)
+
+===============================================================================
+TECHNICAL DETAILS
+===============================================================================
+
+Mod Engine 2 Logs: 
+  Location: modengine2\logs\
+  Check these if you have problems
+
+Configuration File:
+  config_eldenring.toml - Main mod configuration
+  (You shouldn't need to edit this)
+
+Seamless Co-op Settings:
+  SeamlessCoop\ersc_settings.ini - Co-op mod settings
+  SeamlessCoop\cooppassword.ini - Session password
+
+===============================================================================
+CREDITS
+===============================================================================
+
+Seamless Co-op: LukeYui (Nexus Mods)
+Map for Goblins: Goblin (Nexus Mods - ID: 3091)
+Mod Engine 2: SoulsMods team
+
+===============================================================================
+
+Installation Date: December 18, 2025
+Package prepared for multi-machine deployment
+
+For detailed documentation, see: ELDEN_RING_MOD_SETUP.md
+(Available in the HomeLabAI repository)
+
+===============================================================================
