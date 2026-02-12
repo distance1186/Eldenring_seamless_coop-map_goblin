@@ -8,9 +8,17 @@ Pre-configured package for Elden Ring with Seamless Co-op and Map for Goblins mo
 - **Map for Goblins v1.16** - Detailed map markers showing bosses, items, graces, and more
 - **Mod Engine 2** - Required mod loader (pre-configured)
 
-## Quick Start
+## Installation
 
-1. **Download** this entire repository
+### Option 1: Easy Installer (Recommended)
+
+1. **Download** `EldenRing_Mods_Installer.exe` from the [Releases page](https://github.com/distance1186/Eldenring_seamless_coop-map_goblin/releases/latest)
+2. **Run** the installer - it will auto-detect your Elden Ring location
+3. **Launch** using the "Elden Ring (Modded)" shortcut or `launchmod_eldenring.bat`
+
+### Option 2: Manual Installation
+
+1. **Download** this entire repository (Code → Download ZIP)
 2. **Locate** your Elden Ring Game folder:
    - Steam: `C:\Program Files (x86)\Steam\steamapps\common\ELDEN RING\Game`
    - Or wherever you have Elden Ring installed
@@ -105,6 +113,9 @@ This package is for personal use only. All mods are property of their respective
 - **Map for Goblins**: v1.16
 - **Mod Engine 2**: v2.1.0
 
----
+## Downloads
 
-For detailed technical documentation, see the main documentation in the HomeLabAI repository.
+| Download | Description |
+|----------|-------------|
+| [**Installer (Recommended)**](https://github.com/distance1186/Eldenring_seamless_coop-map_goblin/releases/latest) | Easy one-click installer with auto-detection |
+| [**Manual ZIP**](https://github.com/distance1186/Eldenring_seamless_coop-map_goblin/archive/refs/heads/main.zip) | Download all files manually |

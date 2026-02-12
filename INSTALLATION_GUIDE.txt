@@ -8,8 +8,31 @@ This package contains:
 - Mod Engine 2 (required to run the mods)
 
 ===============================================================================
-INSTALLATION INSTRUCTIONS
+INSTALLATION METHOD 1: EASY INSTALLER (RECOMMENDED)
 ===============================================================================
+
+The easiest way to install is using our automatic installer:
+
+1. Download "EldenRing_Mods_Installer.exe" from:
+   https://github.com/distance1186/Eldenring_seamless_coop-map_goblin/releases/latest
+
+2. Run the installer
+   - It will automatically detect your Elden Ring installation
+   - If not found, you can browse to select your Game folder
+
+3. Click through the installation wizard
+
+4. Launch the game using:
+   - The "Elden Ring (Modded)" shortcut on your desktop/Start menu, OR
+   - launchmod_eldenring.bat in your Game folder
+
+That's it! Skip to "USING THE MODS" section below.
+
+===============================================================================
+INSTALLATION METHOD 2: MANUAL INSTALLATION
+===============================================================================
+
+If you prefer to install manually, follow these steps:
 
 STEP 1: Locate Your Elden Ring Game Folder
 -------------------------------------------

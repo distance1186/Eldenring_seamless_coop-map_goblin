@@ -1,0 +1,67 @@
+name: Build Installer
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (e.g., 1.0.0)'
+        required: false
+        default: 'dev'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install Inno Setup
+        run: choco install innosetup -y
+      
+      - name: Update version in installer script
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart('v')
+          $content = Get-Content installer.iss -Raw
+          $content = $content -replace '#define MyAppVersion ".*"', "#define MyAppVersion `"$version`""
+          Set-Content installer.iss $content
+          Write-Host "Updated version to: $version"
+      
+      - name: Build installer
+        run: |
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EldenRing_Mods_Installer
+          path: Output/EldenRing_Mods_Installer.exe
+          retention-days: 30
+      
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: Output/EldenRing_Mods_Installer.exe
+          generate_release_notes: true
+          body: |
+            ## Elden Ring Mods Package Installer
+            
+            ### Included Mods
+            - **Seamless Co-op** - Multiplayer without restrictions
+            - **Map for Goblins** - Detailed map markers
+            - **Mod Engine 2** - Required mod loader
+            
+            ### Installation
+            1. Download `EldenRing_Mods_Installer.exe`
+            2. Run the installer - it will auto-detect your Elden Ring location
+            3. Launch using the "Elden Ring (Modded)" shortcut or `launchmod_eldenring.bat`
+            
+            ⚠️ **Do NOT launch from Steam** - Always use the modded launcher
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
